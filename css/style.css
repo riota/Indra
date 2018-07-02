@@ -1,0 +1,137 @@
+/*
+Colores:
+
+Azules:
+#3a4a9f
+#44a6dd
+
+Naranjas:
+#ffd488
+#db5079
+
+*/
+body {
+	font-size: 15px;
+    line-height: 1.52;
+    font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: relative !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    color: #4B4B4C;
+}
+a{
+    color: #457BAE;
+}
+a:hover, a:focus{
+    color: #457BAE;
+}
+
+/***********************************
+Navigation bar
+************************************/
+.navbar {
+    font-family:'Open Sans', sans-serif;
+    text-transform: uppercase;
+    position: relative; 
+    border:0;
+    padding:10px;
+    font-size: 15px;
+    font-weight: 700;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+.nav-link{
+    padding: 20px;
+}
+@media(min-width:990px) {
+    .navbar-brand{
+        padding-top:0;
+        padding-bottom:0;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+    .navbar{
+        z-index: 1;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+        position: absolute;  
+    }
+    .nav-link:hover{
+        background-clip: padding-box;
+        background-color: rgba(58, 74, 159, 0.5);
+    }
+    /*  Navbar center on desktop  */
+    .nav-container{
+        display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;
+        -ms-flex-pack:center!important;justify-content:center!important;
+    }
+}
+/***********************************
+Banner
+************************************/
+.banner{
+    background: url("img/Portada.jpg") no-repeat center bottom;
+    background-size: cover;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.overlay-rain{
+    padding-top: 50px;
+    z-index: 1;
+    background-image:-webkit-linear-gradient(left,rgba(58, 74, 159, 0.7),rgba(68, 166, 221, 0.7));
+}
+.overlay-sun{
+    padding-top: 50px;
+    z-index: 1;
+    background-image:-webkit-linear-gradient(left,rgba(255, 212, 136, 0.7),rgba(219, 80, 121, 0.7));
+}
+.banner-text{
+    font-family: 'Arimo', sans-serif;
+    font:bold; 
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 60px;
+    color: white;
+}
+ @media (max-width: 990px) {
+    .overlay{
+        height: 40vh;
+    }
+    .banner-text{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 30px;
+    }
+}
+/***********************************
+Clima
+************************************/
+ section{
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+ #clima{
+     padding-top: 60px;
+ }
+/***********************************
+Footer
+************************************/
+.footer {
+    background: #222;
+    color: #ccc;
+}
+.footer-inner {
+    padding: 15px;
+}
+.footer a {
+    color: #fff;
+}
